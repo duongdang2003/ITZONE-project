@@ -1,0 +1,76 @@
+body {
+    background-image: url(/Background.png);
+    background-repeat: no-repeat;
+    background-clip: cover; 
+    background-size: cover;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#container {
+    width: 33%;
+    background-color: white;
+    padding: 3% 2%;
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+}
+input {
+    border: none;
+    padding: 2%;
+    width: 85%;
+}
+.border {
+    border-bottom: 1px solid rgb(219, 215, 215);
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+#login {
+    margin: 0;
+    padding-bottom: 7%;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+#forgot {
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 5%;
+}
+button {
+    width: 100%;
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+    background-image: 
+    linear-gradient(to right,rgb(211, 74, 126),
+    rgb(235, 232, 232));
+    border: rgb(235, 232, 232);
+    border-radius: 5px;
+}
+button:hover {
+    box-shadow: black 1px 1px 5px;
+}
+#other {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10%;
+}
+#twitter {
+    background-color: rgb(0, 132, 255);
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#social {
+    text-align: center;
+}
+#social i {
+    margin-top: 5%;
+    font-size: 30px;
+}
+#create {
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30%;
+}
