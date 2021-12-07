@@ -1,0 +1,53 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  // reset css
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: "Aleo", serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+
+  //   color
+  --mau-0: transparent;
+  --mau-1: #0266a4;
+  --mau-2: #f01e27;
+  --mau-3: #ba72d5;
+  --mau-4: #fff;
+  --mau-5: #000;
+  --mau-6: #333;
+
+  //   variable
+  --width-page: 80%;
+  --padding-header-footer: 1rem 0;
+  --padding-top-bottom-header-footer: 1rem;
+}
+
+canvas {
+  width: 100% !important;
+}
+
+.container {
+  width: var(--width-page);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+@import "popup";
+@import "header";
+@import "responsive-header";
+@import "scrollbar";
+@import "footer";
+@import "responsive-footer";
+
+// PC: >=1024px
+// Tablet: >=740px && <1024px
+// Mobile: <740px

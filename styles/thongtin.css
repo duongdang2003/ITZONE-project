@@ -1,0 +1,299 @@
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+#hoat-dong {
+    margin-bottom: 150px;
+    width: 80%;
+    /* height: 850px; */
+    /* do height co dinh nen phan duoi bi day len nen gay ra loi */
+    margin: auto;
+}
+
+@media (min-width: 1024px) {
+    #hoat-dong {
+        height: 750px;
+        /* do height co dinh nen phan duoi bi day len nen gay ra loi */
+    }
+}
+
+#hoat-dong h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+#hoat-dong .top {
+    margin-bottom: 50px;
+}
+#hoat-dong .bottom {
+    display: flex;
+    justify-content: space-around;
+}
+#hoat-dong .bottom .incoming,
+#hoat-dong .bottom .recent,
+#hoat-dong .bottom .feature {
+    width: 30%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px rgb(87, 87, 87);
+    position: relative;
+    transition: 0.2s;
+    z-index: 0;
+}
+#imageAndGlass {
+    color: white;
+    position: relative;
+}
+#imageAndGlass img {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 0;
+    border-radius: 15px 15px 0 0;
+    z-index: -100;
+}
+#imageAndGlass .glass {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    z-index: -9;
+    user-select: none;
+}
+#hoat-dong .bottom .incoming .content,
+#hoat-dong .bottom .recent .content,
+#hoat-dong .bottom .feature .content {
+    top: 300px;
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    transition: 0.2s;
+    user-select: none;
+}
+#hoat-dong .bottom .incoming .content div,
+#hoat-dong .bottom .recent .content div,
+#hoat-dong .bottom .feature .content div {
+    height: fit-content;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    padding-top: 20px;
+}
+#hoat-dong .bottom .incoming:hover,
+#hoat-dong .bottom .recent:hover,
+#hoat-dong .bottom .feature:hover {
+    height: 600px;
+    transform: translateY(-50px);
+}
+#hoat-dong .bottom .incoming:hover .more,
+#hoat-dong .bottom .recent:hover .more,
+#hoat-dong .bottom .feature:hover .more {
+    display: block;
+}
+#hoat-dong .bottom .incoming:hover .content,
+#hoat-dong .bottom .recent:hover .content,
+#hoat-dong .bottom .feature:hover .content {
+    height: 230px;
+}
+#hoat-dong .bottom .incoming .content div:hover,
+#hoat-dong .bottom .recent .content div:hover,
+#hoat-dong .bottom .feature .content div:hover {
+    background-color: rgba(201, 201, 201, 0.4);
+}
+div .more {
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    left: 5%;
+    display: none;
+    transition: 0.2s;
+}
+#icon-more {
+    position: absolute;
+    font-size: 30px;
+    width: 90%;
+    bottom: 10px;
+    text-align: center;
+    margin-left: 5%;
+    bottom: 0px;
+    display: none;
+}
+#hoat-dong #information {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 5%;
+    top: 5%;
+    width: 90%; 
+    height: 90%; 
+    overflow: auto; 
+    background-color: white; 
+    border-radius: 15px;
+    display: none;
+}
+#hoat-dong .backgroundInfor {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 120%;
+    height: 400%;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#hoat-dong #information::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 50%;
+}
+#hoat-dong #information #headerInformation {
+    background-color: black;
+    height: 10%;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+#hoat-dong #information #button i{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+}
+#hoat-dong #information img {
+    width: 30%;
+    height: auto;
+    margin: 2% 35% 2% 35%;
+}
+#hoat-dong #information #title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+}
+#hoat-dong #information #infor {
+    padding: 3%;
+    padding-top: 1%;
+    border-top: 2px solid rgb(199, 199, 199);
+}
+#hoat-dong #information #closeButton {
+    width: 10%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1% 0 1% 85%;
+}
+#hoat-dong #information #end {
+    position: relative;
+    height: fit-content;
+    border-top: 2px solid rgb(199, 199, 199);
+}
+/*Mobile*/
+@media only screen and (max-width:510px) {
+    #hoat-dong .bottom {
+        flex-direction: column;
+    }
+    #hoat-dong {
+        height: fit-content; 
+    }
+    #hoat-dong .backgroundInfor {
+        height: 800%;
+    }
+    #hoat-dong #information #button i{
+        font-size: 40px;
+    }
+    #hoat-dong #information #headerInformation {
+        height: fit-content;
+    }
+    #hoat-dong #information #title {
+        width: 80%;
+
+    }
+    #hoat-dong #information #closeButton {
+        width: fit-content;
+    margin: 2% 0 2% 80%;
+        
+    }
+    #hoat-dong .bottom .incoming,
+    #hoat-dong .bottom .recent,
+    #hoat-dong .bottom .feature {
+        width: 100%;
+        height: 380px;
+        margin-bottom: 50px;
+    }
+    div .more {
+        display: none;
+        bottom: 50px;
+    }
+    #icon-more {
+        display: block;
+    }
+    #hoat-dong .bottom .incoming:hover .more,
+    #hoat-dong .bottom .recent:hover .more,
+    #hoat-dong .bottom .feature:hover .more {
+        display: none;
+    }
+    #hoat-dong .bottom .incoming:hover,
+    #hoat-dong .bottom .recent:hover,
+    #hoat-dong .bottom .feature:hover {
+        height: 380px;
+        transform: translateY(0px);
+    }
+    #hoat-dong .bottom .incoming .content,
+    #hoat-dong .bottom .recent .content,
+    #hoat-dong .bottom .feature .content {
+        height: 50px;
+        margin-top: -15px;
+        overflow: auto;
+    }
+    #hoat-dong .bottom .incoming:hover .content,
+    #hoat-dong .bottom .recent:hover .content,
+    #hoat-dong .bottom .feature:hover .content {
+        height: 50px;
+    }
+    #hoat-dong .bottom .incoming .content div:nth-child(odd),
+    #hoat-dong .bottom .recent .content div:nth-child(odd),
+    #hoat-dong .bottom .feature .content div:nth-child(odd) {
+        margin-bottom: 10px;
+        border: none;
+        padding: 5px 5px;
+    }
+    #hoat-dong .bottom .incoming .content div:nth-child(even),
+    #hoat-dong .bottom .recent .content div:nth-child(even),
+    #hoat-dong .bottom .feature .content div:nth-child(even) {
+        margin-bottom: 10px;
+        border: none;
+        padding: 5px 5px;
+        background-color: rgb(228, 228, 228);
+        border-radius: 5px;
+    }
+    #hoat-dong #information img {
+        width: 80%;
+        margin: 2% 10% 2% 10%;
+    }
+
+}

@@ -1,0 +1,314 @@
+/* //////////////////////////////////////////mobile */
+@media (max-width: 922px) {
+  #gioi-thieu{
+    background-color: #1a1d6b;
+  }
+  #intro {
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(to right, #7caac7,rgba(118, 156, 214, 0.805));
+    box-shadow: 0px 0px 20px #0065a477;
+    border-radius: 100px;
+  }
+ #chaomung{display:none;}
+  /* ............ chỉnh từ phần arrow từ lap sang mobile................ */
+
+  /* .............Arrow.......................... */
+  #wrapArrow {
+    display: none;
+  }
+  #wrapArrow2 {
+    display: none;
+  }
+
+  /* ............................home............. */
+
+  .home--card__true {
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 50vw;
+    z-index: 3;
+    transform: translateX(-50%);
+    height: 78vh;
+    width: 90%;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    padding: 35px 20px 0 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    overscroll-behavior: auto;
+    animation: appear 0.7s ease-in-out;
+    -webkit-animation: appear 0.7s ease-in-out;
+  }
+  .home--card__false {
+    display: flex;
+  }
+  .home--button {
+    outline: 0;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .section-card h1 {
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+    font-size: 180%;
+  }
+  .subsection-card {
+    height: auto;
+  }
+  #style-1::-webkit-scrollbar {
+    width: 4.5px;
+    background-color: #f5f5f5;
+  }
+  #style-1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+  .section-card-content {
+    font-size: 1.1em;
+    line-height: 23px;
+    text-align: justify;
+  }
+  .section-card-content p {
+    text-indent: -0.5em;
+    margin: 5px 0;
+    line-height: 130%;
+  }
+  .section-card-content h2 {
+    text-indent: -0.5em;
+    margin-bottom: 15px;
+    font-size: 150%;
+  }
+  .subsection-card hr {
+    border-color: #0065a4;
+  }
+
+  #active-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .subsection-card img {
+    width: 90%;
+    margin: 20px 0px;
+  }
+
+  #backgroundClick {
+    height: 300%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+  }
+
+  /* ......................slides............... */
+
+  .slideshow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  bottom: 0.5vh;
+  opacity: 0.7;
+  }
+  .bar {
+    width: 14px;
+    height: 14px;
+  }
+  /* .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .slides {
+    background: red;
+    color: white;
+    width: 300%;
+    height: 100%;
+    display: -webkit-flexbox;
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-box;
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -webkit-scroll-snap-points-x: repeat(300px);
+    -ms-scroll-snap-points-x: repeat(300px);
+        scroll-snap-points-x: repeat(300px);
+-webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+  }
+  .slides > .slide:target {
+    transform: scale(0.3);
+  }
+  .slide {
+    /* width: 300px; */
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 20px; */
+    opacity: 0.85;
+  }
+  .s1 > img {
+    height: 80%;
+    width: auto;
+  }
+  #intro .nut-slide {
+    border: 0 !important;
+  }
+
+
+  #gioithieunho1{
+    background-image: url('../images/tuyenthanhvien.jpg');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-size:100% 50%;
+    background-position: center;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* border-radius: 20px; */
+  }
+
+  #gioithieunho2{
+    background-image: url('../images/banner.png ');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-size:100% 50%;
+    background-position: center;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* border-radius: 20px; */
+  }
+  #gioithieunho3{
+    background-image: url('../images/live.png ');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-size:100% 50%;
+    background-position: center;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* border-radius: 20px; */
+  }
+  #gioithieunho1-2{
+    display:none;
+  }
+
+
+  #warn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size:80%;
+    display: none;
+  }
+  #warn h3{
+    font-size:80%;
+  }
+  #warn button {
+    outline: none;
+    border: 1px solid #333;
+    width: 50px;
+    height: 25px;
+    background-color:#ccc;
+    border-radius: 15px;
+  }
+  #warn button:hover {
+    background-color: #ddd;
+  }
+
+
+
+/* //////////////////video                   */
+
+#but__playvideo{
+  height: 10vh;
+  width: 25vw;
+  position: absolute;
+  bottom:0;
+  left:0;
+  z-index: 5;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius:25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#but__playvideo button{
+  outline: none;
+  height:55%;
+  width:80%;
+  font-size: 8px;
+  border-radius: 20px;
+  border: 1px dashed #1c1038;
+  background-color: #1a1d6b;
+  color:white;
+}
+#but__playvideo button:active{
+  background-color: #c209377a;
+}
+#but__playvideo:active{
+  background-color: #c2b6097a;
+}
+
+#video {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 4;
+  opacity: 1;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#video video{
+  width:100%;
+  border-radius:10px;
+}
+}

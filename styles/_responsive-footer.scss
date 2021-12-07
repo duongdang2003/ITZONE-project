@@ -1,0 +1,41 @@
+@media (max-width: 922px) {
+    footer {
+        .container {
+            align-items: center;
+            flex-direction: column;
+
+            .map {
+                width: 100%;
+            }
+
+            .menu-social {
+                flex-direction: row;
+            }
+
+            &.address {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        .container {
+            align-items: flex-end;
+            .menu-social {
+                // height: 100%;
+                flex-direction: column;
+                a {
+                    opacity: 0.6;
+                    transition: transform 0.2s linear, opacity 0.2s linear;
+                    &:hover {
+                        opacity: 1;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@media (max-width: 922px) {
+    header {
+        .container {
+            // position: relative;
+            .menu {
+                background-color: var(--mau-3);
+                background: rgb(162, 63, 156);
+                background: linear-gradient(
+                    156deg,
+                    rgba(162, 63, 156, 1) 0%,
+                    rgba(255, 70, 153, 1) 38%,
+                    rgba(210, 46, 48, 1) 100%
+                );
+
+                position: absolute;
+                z-index: 9999;
+
+                // top: calc(-1 * var(--padding-top-bottom-header-footer));
+                top: 0;
+                height: 100vh;
+                width: var(--width-header-on-mobile);
+
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 1rem;
+
+                transition: left 0.2s linear;
+                left: calc(-1 * var(--width-header-on-mobile) - 10vw);
+                &.active {
+                    left: 0;
+                    // left: -10vw;
+                }
+
+                a {
+                    padding: 1rem 0 1rem 2rem;
+                    width: 100%;
+                    transition: 0.5s;
+
+                    i {
+                        display: block;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        color: var(--mau-3);
+                        background-color: var(--mau-4);
+                    }
+                }
+            }
+
+            .hamburger {
+                font-size: var(--size-hamburger);
+                display: block;
+                color: var(--mau-4);
+                cursor: pointer;
+                i {
+                    padding: 0.5rem;
+                    border: 2px solid var(--mau-4);
+                    border-radius: 50%;
+                    font-size: 2rem;
+
+                    color: var(--mau-4);
+                    font-weight: bold;
+                    opacity: 0.7;
+                    transition: opacity 0.2s linear;
+
+                    &:hover {
+                        opacity: 1;
+                        background-color: #ffffff77;
+                    }
+                }
+                &.active {
+                    .open {
+                        display: none;
+                    }
+                    .close {
+                        display: block;
+                    }
+                }
+                .open {
+                    display: block;
+                }
+                .close {
+                    display: none;
+                }
+            }
+        }
+    }
+}

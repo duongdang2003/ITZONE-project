@@ -1,0 +1,220 @@
+/* ............................lap && mobile ............... */
+#intro {
+  height: 100%;
+  width: 100vw;
+  /* background: linear-gradient(to right, #7caac7, rgba(81, 109, 151, 0.805)); */
+  box-shadow: 0px 0px 20px #0065a477;
+  border-radius: 0px;
+}
+#chaomung {
+  user-select: none !important;
+}
+@media (min-width: 1024px) {
+  .subsection-card img {
+    width: 45% !important;
+  }
+}
+@keyframes blindShadow {
+  0%,
+  90%,
+  100% {
+    box-shadow: 1px 1px 20px transparent;
+  }
+  30%,
+  60% {
+    box-shadow: 0px 0px 30px rgba(204, 204, 204, 0.589);
+  }
+}
+@keyframes appear {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 50vw;
+  }
+}
+@keyframes disappear {
+  from {
+    left: 50vw;
+  }
+  to {
+    left: -100vw;
+  }
+}
+/* ..................................slide................*/
+
+.slideshow {
+  width: var(--width-page);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  top: 0;
+  /* border-radius: 20px; */
+  /* opacity: 0.3; */
+  /* display:none; */
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  display: -webkit-flexbox;
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.bar {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  opacity: 0.65;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.bar:hover {
+  background-color: #ccc;
+  transition: ease 0.6s;
+}
+
+.bar:active {
+  background-color: darkblue;
+  transition: 0.1s;
+}
+
+input[name="bottom"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 300%;
+  height: 100%;
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: -webkit-flexbox;
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-box;
+}
+
+.slide {
+  width: 33.3%;
+  transition: linear 1.2s;
+  text-align: center;
+}
+
+.slide img {
+  height: 100%;
+  /* border-radius: 20px; */
+  opacity: 0.85;
+}
+/*nut slide*/
+
+.nut-slide {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  line-height: 100px;
+  width: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(14, 60, 121);
+  opacity: 0.5;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  outline: none;
+
+  /* css cho icon next pre slide */
+  background-color: #0000;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: -webkit-flexbox;
+display: -ms-flexbox;  /* TWEENER - IE 10 */
+display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.nut-slide:hover {
+  opacity: 0.8;
+}
+
+.nut-slide-trai {
+  left: 0;
+}
+
+.nut-slide-phai {
+  right: 0;
+}
+
+/* //..................Update.................... */
+#gioi-thieu {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #222;
+  opacity: 1;
+  border-radius: 00px;
+  box-shadow: 0 0 15px rgb(122, 122, 122);
+}
+#trang-chu {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #222;
+  opacity: 1;
+  /* border-radius: 20px; */
+  box-shadow: 0 0 15px rgb(122, 122, 122);
+}
+#gioithieunho1 {
+  background-image: url("../images/tuyenthanhvien.jpg");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: 80% 69%;
+  background-position: center;
+  opacity: 0.55;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* border-radius: 20px; */
+}
+#gioithieunho2 {
+  background-image: url("../images/banner.png ");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: 80% 69%;
+  background-position: center;
+  opacity: 0.55;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* border-radius: 20px; */
+}
+#gioithieunho3 {
+  background-image: url("../images/live.png ");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: 80% 69%;
+  background-position: center;
+  opacity: 0.55;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* border-radius: 20px; */
+}

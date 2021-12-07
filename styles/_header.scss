@@ -1,0 +1,118 @@
+header {
+  --size-logo: 50px;
+  --height-header: 200px;
+  --width-header: 100%;
+  --width-menu: 50%;
+  --size-hamburger: 2rem;
+  --width-header-on-mobile: 50vw;
+
+  width: var(--width-header);
+  background-color: var(--mau-1);
+
+  padding: var(--padding-header-footer);
+  position: fixed;
+  z-index: 5;
+  transition: background 0.2s linear;
+
+  &.transparent {
+    background-color: var(--mau-0);
+  }
+
+  .container {
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      display: flex;
+      border-radius: 50%;
+      overflow: hidden;
+
+      background-color: var(--mau-4);
+      border: 2px solid var(--mau-4);
+      img {
+        width: var(--size-logo);
+        height: var(--size-logo);
+      }
+    }
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: var(--width-menu);
+
+      a {
+        color: var(--mau-4);
+        text-decoration: none;
+        gap: 6px;
+        transition: opacity 0.1s;
+
+        position: relative;
+        font-size: 1.2rem;
+        padding: 0.2rem 0.4rem;
+        overflow: hidden;
+        transition: font-weight 0.2s;
+
+        i {
+          display: none;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          bottom: 0;
+          background-color: red;
+          transition: all 0.2s linear;
+          left: 50%;
+          right: 50%;
+
+          background: #dadbdd;
+        }
+
+        &:hover {
+          opacity: 0.7;
+          i {
+            font-weight: 900;
+          }
+
+          &::after {
+            left: 10%;
+            right: 10%;
+          }
+        }
+
+        &.active {
+          // border: 1px solid #dadbdd;
+          // border-radius: 1rem;
+          font-weight: bolder;
+          pointer-events: none;
+        }
+
+        span {
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  .close-menu {
+    position: absolute;
+    // background-color: red;
+    inset: 0;
+    width: 50vw;
+    height: 100vh;
+    left: 50vw;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
